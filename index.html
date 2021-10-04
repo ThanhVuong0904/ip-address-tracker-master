@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header-item">
+                <h1 class="header-heading">IP Address Tracker</h1>
+                <div class="form-group">
+                    <input type="text" id="search" placeholder="Search for any IP address or domain">
+                    <button class="button--search">
+                        <img src="./images/icon-arrow.svg" alt="arrow">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="wrap-detail">
+            <div class="detail">
+                <div class="detail-list">
+                    <div class="detail-item">
+                        <h3 class="detail-title">IP Address</h3>
+                        <h2 class="detail-desc ip-address">100.100.100.100</h2>
+                    </div>
+                    <div class="detail-item">
+                        <h3 class="detail-title">Location</h3>
+                        <h2 class="detail-desc location">Brooklyn, NY 10001</h2>
+                    </div>
+                    <div class="detail-item">
+                        <h3 class="detail-title">Timezone</h3>
+                        <h2 class="detail-desc time-zone">UTC - 05:00</h2>
+                    </div>
+                    <div class="detail-item">
+                        <h3 class="detail-title">ISP</h3>
+                        <h2 class="detail-desc isp">SpaceX Starlink</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+  
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.facebook.com/thanhvgg/" target="_blank">Thanh Vuong</a>.
+  </div>
+</body>
+</html>
+<script src="./script.js"></script>

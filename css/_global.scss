@@ -1,0 +1,29 @@
+* {
+     padding: 0;margin: 0;box-sizing: border-box;
+}
+a {
+     text-decoration: none;
+}
+img {
+     display: block;
+     max-width: 100%;
+}
+ul {
+     list-style: none;
+}
+body {
+     font-family: 'Rubik', sans-serif;
+     font-size: 18px;
+}
+.wrapper {
+     max-width: 1440px;
+     margin: 0 auto;
+}
+.container {
+     max-width: 1130px;
+     padding: 0 15px;
+     margin: 0 auto;
+}
+#map {
+     height: 100vh;
+}

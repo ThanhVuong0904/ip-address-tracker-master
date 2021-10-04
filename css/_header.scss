@@ -1,0 +1,52 @@
+.header {
+     height: 300px;
+     background-image: url(/images/pattern-bg.png);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     &-item {
+          text-align: center;
+     }
+     &-heading {
+          padding-top: 35px;
+          padding-bottom: 35px;
+          color: white;
+          font-weight: 400;
+          font-size: 35px;
+     }
+     .form-group {
+          display: flex;
+          margin: 0 auto;
+          max-width: 50rem;
+     }
+     .button--search {
+          background-color: black;
+          border: none;
+          outline: none;
+          cursor: pointer;
+          // height: 100%;
+          padding: 1.5rem;
+          border-radius: 0 15px 15px 0;
+     }
+     #search {
+          flex: 1;
+          outline: none;
+          border: none;
+          padding: 1.4rem;
+          border-radius: 15px 0 0 15px;
+     }
+     @media screen and (max-width: 1023px) {
+          .form-group{
+               padding: 0 15px;
+          }
+     }
+     @media screen and (max-width: 767px) {
+          .button--search {
+               padding: 1.3rem;
+          }
+          #search {
+               padding: 1.2rem;
+          }
+     }
+     
+}
