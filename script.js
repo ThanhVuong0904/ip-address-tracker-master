@@ -13,13 +13,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 var market = L.marker([0, 0], {icon: locationIcon}).addTo(map);
-function download(content, fileName, contentType) {
-     var a = document.createElement("a");
-     var file = new Blob([content], {type: contentType});
-     a.href = URL.createObjectURL(file);
-     a.download = fileName;
-     a.click();
-}
+
 const getData = async(api)=> {
      const response = await fetch(api);
      const data = await response.json();
